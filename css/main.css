@@ -317,6 +317,12 @@ ul {
   font-family: ibmPlexBold;
 }
 
+@media (max-width: 768px) {
+  .s-head h3 {
+    font-size: 19px;
+  }
+}
+
 .product {
   position: relative;
 }
@@ -505,6 +511,12 @@ nav .nav-bottom {
   padding: 15px 0;
 }
 
+@media (max-width: 576px) {
+  nav .nav-bottom {
+    padding: 10px 0;
+  }
+}
+
 nav .nav-bottom .c2 {
   display: flex;
   align-items: center;
@@ -519,9 +531,9 @@ nav .nav-bottom .nav-logo img {
   max-width: 100%;
 }
 
-@media (max-width: 1200px) {
-  nav .nav-bottom .nav-logo {
-    max-width: 55%;
+@media (max-width: 576px) {
+  nav .nav-bottom .nav-logo img {
+    max-width: 80%;
   }
 }
 
@@ -540,6 +552,11 @@ nav .nav-bottom .search .search-content input {
   padding: 0 30px;
   color: #959595;
   outline: none;
+  transition: all 0.5s;
+}
+
+nav .nav-bottom .search .search-content input:focus {
+  border-color: #fc4547;
 }
 
 nav .nav-bottom .search .search-content .search-btn {
@@ -577,7 +594,7 @@ nav .nav-bottom .nav-icons .nav-icon {
 
 nav .nav-bottom .nav-icons .nav-icon .ico-btn {
   color: #003c69;
-  font-size: 20px;
+  font-size: 24px;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -702,7 +719,7 @@ nav .nava .nava-content > ul li {
 
 nav .nava .nava-content > ul li a,
 nav .nava .nava-content > ul li .setting-anchor {
-  color: black;
+  color: #003c69;
   transition: all 0.5s;
   font-size: 16px;
   text-transform: capitalize;
@@ -717,7 +734,7 @@ nav .nava .nava-content > ul li .top-dropDown {
 }
 
 nav .nava .nava-content > ul li .top-dropDown a {
-  color: black;
+  color: #003c69;
   margin: 5px 0;
 }
 
@@ -923,6 +940,11 @@ nav .nava-active .nava-content {
   padding: 0 30px;
   color: #959595;
   outline: none;
+  transition: all 0.5s;
+}
+
+.search-form .search .search-content input:focus {
+  border-color: #fc4547;
 }
 
 .search-form .search .search-content .search-btn {
@@ -1124,7 +1146,7 @@ nav .nava-active .nava-content {
 
 #special .special-head .filter .bootstrap-select {
   width: 214px;
-  max-width: 60%;
+  max-width: 100%;
 }
 
 #special .special-head .filter .bootstrap-select .dropdown-toggle {
@@ -1167,12 +1189,11 @@ nav .nava-active .nava-content {
 }
 
 @media (max-width: 768px) {
-  #special .special-head {
-    flex-direction: column;
-    justify-content: space-between;
-  }
   #special .special-head .filter {
-    margin-top: 15px;
+    max-width: 50%;
+  }
+  #special .special-head .filter h4 {
+    display: none;
   }
 }
 
