@@ -328,10 +328,11 @@ nav {
             text-align: start;
 
             img {
-                max-width: 100%;
+                width: 100%;
+                max-width: 149px;
                 
                 @media (max-width: 576px) {
-                    max-width: 80%;
+                    width: 80%;
                 }
             }
         }

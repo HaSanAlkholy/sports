@@ -528,12 +528,13 @@ nav .nav-bottom .nav-logo {
 }
 
 nav .nav-bottom .nav-logo img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 149px;
 }
 
 @media (max-width: 576px) {
   nav .nav-bottom .nav-logo img {
-    max-width: 80%;
+    width: 80%;
   }
 }
 
