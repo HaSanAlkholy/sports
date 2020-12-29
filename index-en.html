@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="overflow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/vendor/all.min.css" />
+    <link rel="stylesheet" href="./css/vendor/linear.css" />
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/vendor/aos.css" />
+    <link rel="stylesheet" href="./css/vendor/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="./css/vendor/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./images/icons/favicon.jpg" />
+    <title>Sports</title>
+  </head>
+
+  <body>
+    <div class="pre-loader">
+      <div class="content">
+        <div class="lds-hourglass"></div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="nav-bottom">
+        <div class="c2">
+          <div class="nav-logo">
+            <a href="#"><img src="./images/logo.png" alt=".." /></a>
+          </div>
+          <div class="search">
+            <div class="search-content">
+              <form action="#">
+                <input type="text" placeholder="Search..." />
+                <button class="search-btn flex-center">
+                  <span class="lnr lnr-magnifier"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="nav-icons flex-center">
+            <div class="nava-btn nav-icon" id="nava-icon">
+              <div class="ico-btn">
+                <span class="lnr lnr-menu"></span>
+              </div>
+            </div>
+            <div class="search-btn nav-icon" id="search-btn">
+              <div class="ico-btn">
+                <span class="lnr lnr-magnifier"></span>
+              </div>
+            </div>
+            <div class="user nav-icon">
+              <a href="#">
+                <span class="lnr lnr-user"></span>
+                Sign in
+              </a>
+            </div>
+            <div class="advertise nav-icon">
+              <span><i class="fas fa-plus"></i></span>
+              Place your Ad
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nava-container">
+        <div class="container">
+          <div class="c2">
+            <div class="nava" id="nava">
+              <div class="nava-content">
+                <div class="nava-head">
+                  <div class="nava-lang">
+                    <a href="./index.html">AR</a>
+                  </div>
+                  <div class="nava-close" id="close-nava">
+                    <span class="lnr lnr-cross"></span>
+                  </div>
+                </div>
+                <ul>
+                  <li><a href="#"> Home</a></li>
+                  <li><a href="#"> Sign in</a></li>
+                  <li class="top-setting sm-slide slide">
+                    <span class="setting-anchor drop">
+                      Categories
+                      <span class="lnr lnr-chevron-down down"></span>
+                    </span>
+                    <div class="top-dropDown">
+                      <a href="#" class="drop-link fixall">Categories 1</a>
+                      <a href="#" class="drop-link fixall">Categories 2</a>
+                      <a href="#" class="drop-link fixall">Categories 3</a>
+                      <a href="#" class="drop-link fixall">Categories 4</a>
+                    </div>
+                  </li>
+                  <li><a href="#"> About us</a></li>
+                  <li><a href="#"> Terms and Conditions</a></li>
+                  <li><a href="#"> common questions </a></li>
+                  <li><a href="#"> Contact us </a></li>
+                </ul>
+                <div class="advertise nav-icon">
+                  <span><i class="fas fa-plus"></i></span>
+                  Place your ad
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-form" id="search-form">
+      <div class="close-search" id="close-search">
+        <span class="lnr lnr-cross"></span>
+      </div>
+      <div class="search">
+        <div class="search-content">
+          <form action="#">
+            <input type="text" placeholder="Search.." />
+            <button class="search-btn flex-center">
+              <span class="lnr lnr-magnifier"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section id="categories">
+      <div class="c2">
+        <div class="categories-content">
+          <div class="categories-swiper-container">
+            <div class="swiper-wrapper">
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/1.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Football fields</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/2.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Volleyball / basketball courts</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/3.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Tennis courts</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/4.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Billiard courts</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/5.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Bowling courts</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/6.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Golf courses</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/7.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Equestrian stables</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/8.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Gym clubs and gyms for men</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/9.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Gym clubs and women's gyms</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/10.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Sports Cafes</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="categories-swiper-container second-swiper">
+            <div class="swiper-wrapper">
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/11.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Water sports resorts and restrooms</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/2.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Sports stores and supplies</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/12.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Playground equipment and fixtures</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/13.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Stadiums league</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/14.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Brokers and player deals</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/15.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Sponsores</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/16.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Charity matches and contests</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/17.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Mall and complex games</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/18.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Playstation challenge</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="category swiper-slide">
+                <a href="#">
+                  <div class="category-icon">
+                    <img src="./images/icons/19.svg" alt="icon" />
+                  </div>
+                  <div class="category-body">
+                    <h3>Coordinate exercises</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-pagination" id="categories-pagenation"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="best-seller" class="product-slider">
+      <div class="c2">
+        <div class="best-seller-head s-head" data-aos="fade-left">
+          <h3>Special Ads</h3>
+        </div>
+        <div class="best-seller-body" data-aos="zoom-in">
+          <div class="best-seller-swiper-container s-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product">
+                <div class="product-img">
+                  <a href="#">
+                    <img src="./images/products/1.jpg" alt="product" />
+                  </a>
+                </div>
+                <div class="product-disc">
+                  <h5>
+                    <a href="#"
+                      >Contrary to popular belief, Lorem Ipsum is not a random text
+                    </a>
+                  </h5>
+                  <div class="product-location product-data">
+                    <a href="#"
+                      ><span class="lnr lnr-map-marker"></span> Riyadh</a
+                    >
+                  </div>
+                  <div class="product-user product-data">
+                    <a href="#"
+                      ><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a
+                    >
+                  </div>
+                  <div class="product-date product-data">
+                    <a href="#"
+                        ><span class="lnr lnr-clock"></span>An hour and 53 minutes ago</a
+                    >
+                  </div>
+                  <div class="product-btns flex-center">
+                    <div class="favourite">
+                      <span class="lnr lnr-heart"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product">
+                <div class="product-img">
+                  <a href="#">
+                    <img src="./images/products/2.jpg" alt="product" />
+                  </a>
+                </div>
+                <div class="product-disc">
+                  <h5>
+                    <a href="#"
+                      >Contrary to popular belief, Lorem Ipsum is not a random text
+                    </a>
+                  </h5>
+                  <div class="product-location product-data">
+                    <a href="#"
+                      ><span class="lnr lnr-map-marker"></span> Riyadh</a
+                    >
+                  </div>
+                  <div class="product-user product-data">
+                    <a href="#"
+                      ><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a
+                    >
+                  </div>
+                  <div class="product-date product-data">
+                    <a href="#"
+                      ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                    >
+                  </div>
+                  <div class="product-btns flex-center">
+                    <div class="favourite">
+                      <span class="lnr lnr-heart"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product">
+                <div class="product-img">
+                  <a href="#">
+                    <img src="./images/products/3.jpg" alt="product" />
+                  </a>
+                </div>
+                <div class="product-disc">
+                  <h5>
+                    <a href="#"
+                      >Contrary to popular belief, Lorem Ipsum is not a random text
+                    </a>
+                  </h5>
+                  <div class="product-location product-data">
+                    <a href="#"
+                      ><span class="lnr lnr-map-marker"></span> Riyadh</a
+                    >
+                  </div>
+                  <div class="product-user product-data">
+                    <a href="#"
+                      ><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a
+                    >
+                  </div>
+                  <div class="product-date product-data">
+                    <a href="#"
+                      ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                    >
+                  </div>
+                  <div class="product-btns flex-center">
+                    <div class="favourite">
+                      <span class="lnr lnr-heart"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product">
+                <div class="product-img">
+                  <a href="#">
+                    <img src="./images/products/4.jpg" alt="product" />
+                  </a>
+                </div>
+                <div class="product-disc">
+                  <h5>
+                    <a href="#"
+                      >Contrary to popular belief, Lorem Ipsum is not a random text
+                    </a>
+                  </h5>
+                  <div class="product-location product-data">
+                    <a href="#"
+                      ><span class="lnr lnr-map-marker"></span> Riyadh</a
+                    >
+                  </div>
+                  <div class="product-user product-data">
+                    <a href="#"
+                      ><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a
+                    >
+                  </div>
+                  <div class="product-date product-data">
+                    <a href="#"
+                      ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                    >
+                  </div>
+                  <div class="product-btns flex-center">
+                    <div class="favourite">
+                      <span class="lnr lnr-heart"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="space">
+      <div class="c2">
+        <div class="space-content">
+          <div class="space">
+            <a href="#"><img src="./images/space.jpg" alt=".." /></a>
+          </div>
+          <div class="space">
+            <a href="#"><img src="./images/space.jpg" alt=".." /></a>
+          </div>
+          <div class="space">
+            <a href="#"><img src="./images/space.jpg" alt=".." /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="special">
+      <div class="c2">
+        <div class="special-head s-head" data-aos="fade-left">
+          <h3>Latest ADS</h3>
+          <div class="filter">
+            <h4>Filter by city</h4>
+            <select class="selectpicker">
+              <option>Riyadh</option>
+              <option>Cairo</option>
+              <option>Mansoura</option>
+            </select>
+          </div>
+        </div>
+        <div class="special-body" data-aos="zoom-in">
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/5.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/6.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/7.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/8.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/1.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/2.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/3.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/4.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/5.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/6.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/7.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <a href="#">
+                <img src="./images/products/8.jpg" alt="product" />
+              </a>
+            </div>
+            <div class="product-disc">
+              <h5>
+                <a href="#"
+                  >Contrary to popular belief, Lorem Ipsum is not a random text
+                </a>
+              </h5>
+              <div class="product-location product-data">
+                <a href="#"><span class="lnr lnr-map-marker"></span> Riyadh</a>
+              </div>
+              <div class="product-user product-data">
+                <a href="#"><span class="lnr lnr-user"></span> Muhammad al-Shahrani</a>
+              </div>
+              <div class="product-date product-data">
+                <a href="#"
+                  ><span class="lnr lnr-clock"></span> An hour and 53 minutes ago</a
+                >
+              </div>
+              <div class="product-btns flex-center">
+                <div class="favourite">
+                  <span class="lnr lnr-heart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="more"><a href="#">Watch more</a></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="c2">
+        <div class="footer-top">
+          <div class="footer-logo footer-list" data-aos="fade-left">
+            <img src="./images/footer-logo.png" alt="logo" />
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Common quistions</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="social flex-center">
+            <div class="social-icon insta">
+              <a class="flex-center" href="#">
+                <i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <div class="social-icon snap">
+              <a class="flex-center" href="#">
+                <i class="fab fa-snapchat-ghost"></i
+              ></a>
+            </div>
+            <div class="social-icon twitter">
+              <a class="flex-center" href="#">
+                <i class="fab fa-twitter"></i
+              ></a>
+            </div>
+            <div class="social-icon fb">
+              <a class="flex-center" href="#">
+                <i class="fab fa-facebook-f"></i
+              ></a>
+            </div>
+          </div>
+          <div class="credit">
+            <p>&copy;All Rights Reserved Sports 2020</p>
+            <p>
+              Made with <i class="fas fa-heart"></i> in
+              <a href="https://tasawk.com.sa/" target="_blank"
+                ><img src="./images/icons/taswk-en.png" alt=".."
+              /></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="up"
+      class="up flex-center"
+      onclick="window.scroll({top: 0,behavior: 'smooth'});"
+    >
+      <span class="lnr lnr-chevron-up"></span>
+    </div>
+
+    <script src="./js/vendor/jquery.min.js"></script>
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/vendor/bootstrap-select.min.js"></script>
+    <script src="./js/vendor/swiper-bundle.js"></script>
+    <script src="./js/vendor/aos.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
